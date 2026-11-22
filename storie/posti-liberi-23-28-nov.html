@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Posti liberi</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* Design system — editorial nude */
+  :root{
+    --bg:#F5ECE6; --bg-2:#EBD9CF; --ink:#2B1F1C; --muted:#8A7670;
+    --rose:#C9928A; --rose-deep:#9C5D55; --card:rgba(255,255,255,.58);
+    --line:rgba(43,31,28,.10); --chip:#FFFFFF; --chip-ink:#2B1F1C;
+    --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px; --s7:96px;
+    --display:'Cormorant Garamond', Georgia, serif; --body:'Jost', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1080px;height:1920px}
+  body{
+    background:
+      radial-gradient(900px 700px at 100% 0%, var(--bg-2) 0%, transparent 60%),
+      radial-gradient(800px 800px at 0% 100%, #EED6CE 0%, transparent 60%),
+      var(--bg);
+    color:var(--ink); font-family:var(--body); overflow:hidden; position:relative;
+  }
+  .frame{position:absolute; inset:var(--s5); border:1.5px solid var(--line); border-radius:40px}
+  .wrap{position:relative; height:100%; padding:170px 110px 200px; display:flex; flex-direction:column}
+  .kicker{font-size:28px; letter-spacing:.32em; text-transform:uppercase; color:var(--rose-deep); font-weight:500}
+  h1{font-family:var(--display); font-weight:500; font-size:124px; line-height:.92; margin-top:var(--s2); letter-spacing:-.01em}
+  h1 em{color:var(--rose-deep)}
+  .dates{margin-top:var(--s2); font-size:34px; color:var(--muted); font-weight:300; letter-spacing:.04em}
+  .days{margin-top:var(--s5); display:flex; flex-direction:column; gap:14px}
+  .day{
+    display:grid; grid-template-columns:200px 1fr; align-items:center; gap:var(--s3);
+    background:var(--card); border:1px solid rgba(255,255,255,.8);
+    border-radius:28px; padding:18px 30px; backdrop-filter:blur(12px);
+    box-shadow:0 10px 30px rgba(156,93,85,.08);
+  }
+  .dname{font-family:var(--display); font-size:48px; font-weight:600; line-height:1}
+  .dnum{display:block; font-family:var(--body); font-size:22px; letter-spacing:.2em; color:var(--muted); margin-top:6px; text-transform:uppercase}
+  .slots{display:flex; flex-wrap:wrap; gap:10px}
+  .slot{background:var(--chip); color:var(--chip-ink); font-size:31px; font-weight:500; padding:8px 22px; border-radius:999px; border:1px solid var(--line)}
+  .slot.short{background:transparent; border:1.5px dashed var(--rose)}
+  .day.full{opacity:.55}
+  .full-label{font-family:var(--display); font-style:italic; font-size:42px; color:var(--muted)}
+  .note{margin-top:var(--s3); font-size:24px; color:var(--muted); display:flex; align-items:center; gap:12px}
+  .note i{display:inline-block; width:34px; height:22px; border-radius:999px; border:1.5px dashed var(--rose)}
+  .cta{margin-top:auto; text-align:center}
+  .cta p{font-family:var(--display); font-style:italic; font-size:52px; line-height:1.1}
+  .btn{display:inline-block; margin-top:var(--s3); background:var(--ink); color:var(--bg); font-size:30px; letter-spacing:.18em; text-transform:uppercase; padding:22px 52px; border-radius:999px}
+  .brand{margin-top:var(--s3); font-size:24px; letter-spacing:.3em; text-transform:uppercase; color:var(--muted)}
+</style>
+</head>
+<body>
+  <div class="frame"></div>
+  <div class="wrap">
+    <div class="kicker">Questa settimana</div>
+    <h1>Posti <em>liberi</em></h1>
+    <div class="dates">23 — 28 novembre</div>
+
+    <div class="days">
+      <div class="day"><div class="dname">Lun<span class="dnum">23 nov</span></div>
+        <div class="slots"><span class="slot">18:00</span></div></div>
+      <div class="day"><div class="dname">Mar<span class="dnum">24 nov</span></div>
+        <div class="slots"><span class="slot">13:30</span></div></div>
+      <div class="day"><div class="dname">Mer<span class="dnum">25 nov</span></div>
+        <div class="slots"><span class="slot short">10:15</span><span class="slot">12:00</span><span class="slot">13:00</span><span class="slot short">18:15</span></div></div>
+      <div class="day full"><div class="dname">Gio<span class="dnum">26 nov</span></div>
+        <div class="full-label">al completo</div></div>
+      <div class="day"><div class="dname">Ven<span class="dnum">27 nov</span></div>
+        <div class="slots"><span class="slot">8:00</span><span class="slot">9:00</span><span class="slot">10:00</span><span class="slot">13:30</span><span class="slot">18:00</span></div></div>
+      <div class="day"><div class="dname">Sab<span class="dnum">28 nov</span></div>
+        <div class="slots"><span class="slot short">9:15</span><span class="slot">12:45</span><span class="slot">15:00</span><span class="slot">16:00</span><span class="slot">17:00</span><span class="slot">18:00</span></div></div>
+    </div>
+    <div class="note"><i></i> 45 min · ideale per semipermanente</div>
+
+    <div class="cta">
+      <p>Prenota il tuo momento ✦</p>
+      <div class="btn">Scrivimi in DM</div>
+      <div class="brand">Greta L. Beauty Studio</div>
+    </div>
+  </div>
+</body>
+</html>
