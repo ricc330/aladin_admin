@@ -15,14 +15,14 @@
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{width:1080px;height:1920px}
   body{background:var(--bg); color:var(--ink); font-family:var(--body); position:relative; overflow:hidden}
-  .kicker{position:absolute; left:var(--x); top:332px; font-size:25px; letter-spacing:.18em; text-transform:uppercase; color:var(--kicker); font-weight:400}
-  h1{position:absolute; left:var(--x); top:378px; font-family:var(--display); font-weight:400; font-size:92px; line-height:1.05; letter-spacing:-.005em}
+  .kicker{position:absolute; left:var(--x); top:300px; font-size:25px; letter-spacing:.18em; text-transform:uppercase; color:var(--kicker); font-weight:400}
+  h1{position:absolute; left:var(--x); top:342px; font-family:var(--display); font-weight:400; font-size:84px; line-height:1.05; letter-spacing:-.005em}
   h1 em{color:var(--accent)}
-  .rule{position:absolute; left:var(--x); top:512px; width:120px; height:2px; background:var(--gold)}
-  .sub{position:absolute; left:var(--x); top:546px; font-family:var(--display); font-style:italic; font-size:34px; color:var(--muted)}
+  .rule{position:absolute; left:var(--x); top:462px; width:120px; height:2px; background:var(--gold)}
+  .sub{position:absolute; left:var(--x); top:490px; font-family:var(--display); font-style:italic; font-size:32px; color:var(--muted)}
 
-  .days{position:absolute; left:var(--x); right:var(--x); top:640px}
-  .day{display:grid; grid-template-columns:250px 1fr; align-items:baseline; padding:20px 0; border-top:1px solid var(--line)}
+  .days{position:absolute; left:var(--x); right:var(--x); top:572px}
+  .day{display:grid; grid-template-columns:250px 1fr; align-items:baseline; padding:17px 0; border-top:1px solid var(--line)}
   .day:last-child{border-bottom:1px solid var(--line)}
   .dname{font-family:var(--display); font-size:42px; line-height:1}
   .dnum{display:block; margin-top:10px; font-family:var(--body); font-size:19px; letter-spacing:.18em; text-transform:uppercase; color:var(--kicker)}
@@ -31,17 +31,17 @@
   .slots .short{color:var(--accent); font-style:italic; font-family:var(--display); font-weight:400; font-size:33px}
   .full{font-family:var(--display); font-style:italic; font-size:36px; color:var(--muted)}
 
-  .note{position:absolute; left:var(--x); top:1366px; font-size:20px; letter-spacing:.06em; color:var(--muted)}
+  .note{position:absolute; left:var(--x); top:1252px; font-size:20px; letter-spacing:.06em; color:var(--muted)}
   .note em{font-family:var(--display); color:var(--accent); font-size:24px}
-  .cta{position:absolute; left:0; right:0; top:1468px; text-align:center; font-size:23px; letter-spacing:.2em; text-transform:uppercase; color:var(--kicker)}
-  .logo{position:absolute; left:50%; top:1530px; width:108px; transform:translateX(-50%)}
+  .cta{position:absolute; left:0; right:0; top:1316px; text-align:center; font-family:var(--display); font-style:italic; font-size:36px; color:var(--ink)}
+  .logo{position:absolute; left:50%; top:1384px; width:84px; transform:translateX(-50%)}
 </style>
 </head>
 <body>
   <div class="kicker">Questa settimana</div>
-  <h1>Posti <em>liberi</em></h1>
+  <h1>Ho ancora <em>17 posti</em></h1>
   <div class="rule"></div>
-  <div class="sub">dal 23 al 28 novembre</div>
+  <div class="sub">dal 23 al 28 novembre · scegli il tuo orario</div>
 
   <div class="days">
     <div class="day"><div class="dname">Lunedì<span class="dnum">23 nov</span></div>
@@ -59,7 +59,7 @@
   </div>
 
   <div class="note"><em>in corsivo</em> · 45 min, ideale per semipermanente</div>
-  <div class="cta">Prenota in DM</div>
+  <div class="cta">Prenoti da sola dal link qui sotto</div>
   <img class="logo" src="logo-gl.png" alt="Greta L. Beauty Studio">
 </body>
 </html>
