@@ -5,61 +5,46 @@
 <title>Posti liberi</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  /* Stile storie Greta L. Beauty Studio (da storie precedenti) */
+  /* Template "Posti liberi" Greta L. Beauty Studio */
   :root{
-    --bg:#FBF8F5; --ink:#1E1E1E; --accent:#7A5E1B; --kicker:#7A5C50;
-    --gold:#D9AF37; --line:rgba(122,92,80,.18); --muted:#9A8A82;
+    --bg:#E7DED5; --ink:#1E1E1E; --accent:#7A5E1B; --kicker:#7A5C50;
+    --line:#C9C0B5; --foot:#4F463E;
     --display:'Playfair Display', Georgia, serif; --body:'Montserrat', system-ui, sans-serif;
-    --x:90px;
+    --x:100px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{width:1080px;height:1920px}
   body{background:var(--bg); color:var(--ink); font-family:var(--body); position:relative; overflow:hidden}
-  .kicker{position:absolute; left:var(--x); top:300px; font-size:25px; letter-spacing:.18em; text-transform:uppercase; color:var(--kicker); font-weight:400}
-  h1{position:absolute; left:var(--x); top:342px; font-family:var(--display); font-weight:400; font-size:84px; line-height:1.05; letter-spacing:-.005em}
+  .kicker{position:absolute; left:var(--x); top:331px; font-size:25px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--kicker)}
+  h1{position:absolute; left:var(--x); top:384px; font-family:var(--display); font-weight:400; font-size:80px; line-height:1}
   h1 em{color:var(--accent)}
-  .rule{position:absolute; left:var(--x); top:462px; width:120px; height:2px; background:var(--gold)}
-  .sub{position:absolute; left:var(--x); top:490px; font-family:var(--display); font-style:italic; font-size:32px; color:var(--muted)}
-
-  .days{position:absolute; left:var(--x); right:var(--x); top:572px}
-  .day{display:grid; grid-template-columns:250px 1fr; align-items:baseline; padding:17px 0; border-top:1px solid var(--line)}
-  .day:last-child{border-bottom:1px solid var(--line)}
-  .dname{font-family:var(--display); font-size:42px; line-height:1}
-  .dnum{display:block; margin-top:10px; font-family:var(--body); font-size:19px; letter-spacing:.18em; text-transform:uppercase; color:var(--kicker)}
-  .slots{font-size:31px; font-weight:500; letter-spacing:.02em; line-height:1.55; color:var(--ink)}
-  .slots .sep{color:var(--gold); margin:0 9px; font-weight:400}
-  .slots .short{color:var(--accent); font-style:italic; font-family:var(--display); font-weight:400; font-size:33px}
-  .full{font-family:var(--display); font-style:italic; font-size:36px; color:var(--muted)}
-
-  .note{position:absolute; left:var(--x); top:1252px; font-size:20px; letter-spacing:.06em; color:var(--muted)}
-  .note em{font-family:var(--display); color:var(--accent); font-size:24px}
-  .cta{position:absolute; left:0; right:0; top:1316px; text-align:center; font-family:var(--display); font-style:italic; font-size:36px; color:var(--ink)}
-  .logo{position:absolute; left:50%; top:1384px; width:84px; transform:translateX(-50%)}
+  .days{position:absolute; left:var(--x); right:102px; top:494px}
+  .day{display:flex; align-items:center; height:101px; border-bottom:1.5px solid var(--line)}
+  .day:first-child{height:91px}
+  .dname{width:254px; font-size:35px; font-weight:400; color:var(--ink)}
+  .slots{font-family:var(--display); font-size:41px; color:var(--accent); font-variant-numeric:oldstyle-nums}
+  .foot{position:absolute; left:var(--x); font-size:27px; line-height:35px; color:var(--foot)}
+  .logo{position:absolute; left:50%; top:1450px; height:145px; transform:translateX(-50%)}
 </style>
 </head>
 <body>
-  <div class="kicker">Questa settimana</div>
-  <h1>Ho ancora <em>17 posti</em></h1>
-  <div class="rule"></div>
-  <div class="sub">dal 23 al 28 novembre · scegli il tuo orario</div>
+  <div class="kicker">Da lunedì 23 a sabato 28</div>
+  <h1>Posti <em>liberi</em></h1>
 
   <div class="days">
-    <div class="day"><div class="dname">Lunedì<span class="dnum">23 nov</span></div>
-      <div class="slots">18:00</div></div>
-    <div class="day"><div class="dname">Martedì<span class="dnum">24 nov</span></div>
-      <div class="slots">13:30</div></div>
-    <div class="day"><div class="dname">Mercoledì<span class="dnum">25 nov</span></div>
-      <div class="slots"><span class="short">10:15</span><span class="sep">·</span>12:00<span class="sep">·</span>13:00<span class="sep">·</span><span class="short">18:15</span></div></div>
-    <div class="day"><div class="dname">Giovedì<span class="dnum">26 nov</span></div>
-      <div class="full">al completo</div></div>
-    <div class="day"><div class="dname">Venerdì<span class="dnum">27 nov</span></div>
-      <div class="slots">8:00<span class="sep">·</span>9:00<span class="sep">·</span>10:00<span class="sep">·</span>13:30<span class="sep">·</span>18:00</div></div>
-    <div class="day"><div class="dname">Sabato<span class="dnum">28 nov</span></div>
-      <div class="slots"><span class="short">9:15</span><span class="sep">·</span>12:45<span class="sep">·</span>15:00<span class="sep">·</span>16:00<span class="sep">·</span>17:00<span class="sep">·</span>18:00</div></div>
+    <div class="day"><div class="dname">Lunedì 23</div><div class="slots">18:00</div></div>
+    <div class="day"><div class="dname">Martedì 24</div><div class="slots">13:30</div></div>
+    <div class="day"><div class="dname">Mercoledì 25</div><div class="slots">12:00–13:00</div></div>
+    <div class="day"><div class="dname">Venerdì 27</div><div class="slots">8:00–10:30 · 13:30 · 18:00</div></div>
+    <div class="day"><div class="dname">Sabato 28</div><div class="slots">13:00 · 15:00–18:00</div></div>
   </div>
 
-  <div class="note"><em>in corsivo</em> · 45 min, ideale per semipermanente</div>
-  <div class="cta">Prenoti da sola dal link qui sotto</div>
+  <div class="foot" id="foot">Giovedì è pieno.<br>Prenoti dal link qui sotto.</div>
   <img class="logo" src="logo-gl.png" alt="Greta L. Beauty Studio">
+  <script>
+    // nota sempre ~35px sotto l'ultima riga, come nel template
+    const d=document.querySelector('.days').getBoundingClientRect();
+    document.getElementById('foot').style.top=(d.bottom+38)+'px';
+  </script>
 </body>
 </html>
